@@ -1,0 +1,195 @@
+{% extends 'base.html' %}
+{% block styles%}
+{{ super() }}
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/darkly/bootstrap.min.css">
+{% endblock %}
+{% block content %}
+
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid">
+    <br>
+    <br>
+    <br>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <a href="/fam"><div class="card fam">
+          <h3 class="famo">FAMILY CONFLICTS</h3>
+          <div class="card-body">
+          </div></a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="col-md-6">
+        <a href="/mental"><div class="card depr">
+          <h3 class="men">MENTAL ISSUES</h3>
+          <div class="card-body">
+          </div>
+        </div></a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="/health"><div class="card health">
+          <h3 class="hee">HEALTH</h3>
+        </div></a>
+      </div>
+      <br>
+      <br>
+      <div class="col-md-6">
+        <a href="/identity"><div class="card ide">
+          <h3 class="idee">IDENTITY CRISIS</h3>
+          <div class="card-body">
+          </div></a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+</body>
+<style>
+  
+  body{
+    background: #2E4053;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  .card-body {
+    border: 0 !important;
+  }
+  
+  .card-body h5 {
+    font-size: 15px;
+  }
+  .cards:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: translateY(-7px);
+  }
+  .health{
+    background: url(/static/photos/h.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 650px;
+    margin-left: 60px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .hee{
+    font-size: 45px;
+    text-align: center;
+    padding-top: 35%;
+    color: whitesmoke;
+    font-family: 'Patua One', cursive;
+  }
+  
+  .health:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    opacity: 0.7;
+    overflow: hidden;
+    transition: .5s ease;
+    transform: translateY(-7px);
+  }
+  .depr{
+    background: url(/static/photos/depr.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 650px;
+    margin-left: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .men{
+    text-align: center;
+    padding-top: 35%;
+    color: whitesmoke;
+    font-family: 'Patua One', cursive;
+    font-size: 45px;
+  }
+  .depr:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: translateY(-7px);
+    opacity: 0.7;
+    overflow: hidden;
+    transition: .5s ease;
+  }
+  .fam{
+    background: url(/static/photos/fam.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 650px;
+    margin-left: 60px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s ease 0s;
+    cursor:progress;
+    border-radius: 20px;
+  }
+  .famo{
+    text-align: center;
+    padding-top: 35%;
+    color: whitesmoke;
+    font-family: 'Patua One', cursive;
+    font-size: 45px;
+  }
+  .fam:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: translateY(-7px);
+    opacity: 0.7;
+    overflow: hidden;
+    transition: .5s ease;
+  }
+  .ide{
+    background: url(/static/photos/ide.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 650px;
+    margin-left: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s ease 0s;
+    cursor:progress;
+    border-radius: 20px;
+  }
+  .idee{
+    text-align: center;
+    padding-top: 35%;
+    color: whitesmoke;
+    font-family: 'Patua One', cursive;
+    font-size: 45px;
+  }
+  .ide:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: translateY(-7px);
+    opacity: 0.7;
+    overflow: hidden;
+    transition: .5s ease;
+  }
+</style>
+
+{% endblock %}
