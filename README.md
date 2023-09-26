@@ -16,13 +16,15 @@ To get the code..
 
 3. Fix ModuleNotFoundError: No module named 'flask._compat'  
   Click on Ctrl + the path to the virtual file. Change this line of code
+  
+  from:
   ```
-  Where:
-
 from ._compat import text_type on original flask-script file
+  ```
 
 to :
 
+```
 from flask_script._compat import text_type
 ```
 
